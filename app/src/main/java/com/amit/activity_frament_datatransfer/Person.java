@@ -9,6 +9,10 @@ import android.os.Parcelable;
 
 public class Person implements Parcelable {
 
+    /*Reference link
+    https://www.survivingwithandroid.com/2012/09/passing-data-between-activities-2.html
+*/
+    //Getter ans setters
     public void setName(String name) {
         this.name = name;
     }
@@ -34,6 +38,7 @@ public class Person implements Parcelable {
     public String getEmail() {
         return email;
     }
+
 
     private Person(Parcel in) {
         name = in.readString();
