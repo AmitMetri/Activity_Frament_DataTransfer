@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GetIntentData" />
-        <activity android:name=".GetBundleData"></activity>
+        <activity android:name=".GetBundleData" />
+        <activity android:name=".GetParcelDataa"></activity>
     </application>
 
 </manifest>
