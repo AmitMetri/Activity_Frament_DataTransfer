@@ -19,6 +19,7 @@ public class GetParcelDataa extends AppCompatActivity {
         textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView3);
 
+        //get parcelable data
         Intent intent = getIntent();
         Person person = intent.getParcelableExtra("person");
         textView.setText(person.getName());
