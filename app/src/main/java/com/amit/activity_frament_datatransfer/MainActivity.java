@@ -7,9 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import activity_to_activity.GetBundleData;
+import activity_to_activity.GetIntentData;
+import activity_to_activity.GetParcelDataa;
+import activity_to_activity.Person;
+
 public class MainActivity extends AppCompatActivity {
 
-    EditText editText, editText2, editText3;
+    public EditText editText, editText2, editText3;
     Button button, button2, button3;
 
     @Override
@@ -24,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
 
+        /*REFERENCE LINK
+    https://www.survivingwithandroid.com/2012/09/passing-data-between-activities-2.html
+*/
         //Pass data in intent
         button.setOnClickListener(new View.OnClickListener() {
             @Override

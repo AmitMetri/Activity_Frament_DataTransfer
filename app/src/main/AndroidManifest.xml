@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GetIntentData" />
-        <activity android:name=".GetBundleData" />
-        <activity android:name=".GetParcelDataa"></activity>
+        <activity android:name="activity_to_activity.GetIntentData" />
+        <activity android:name="activity_to_activity.GetBundleData" />
+        <activity android:name="activity_to_activity.GetParcelDataa"></activity>
     </application>
 
 </manifest>

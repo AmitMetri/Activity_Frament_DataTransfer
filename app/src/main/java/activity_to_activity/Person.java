@@ -1,4 +1,4 @@
-package com.amit.activity_frament_datatransfer;
+package activity_to_activity;
 
 import android.os.Parcel;
 import android.os.Parcelable;

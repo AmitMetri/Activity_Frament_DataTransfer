@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.amit.activity_frament_datatransfer.GetParcelDataa">
+    tools:context="com.amit.activity_frament_datatransfer.activity_to_activity.GetParcelDataa">
 
     <TextView
         android:id="@+id/textView"

@@ -1,10 +1,11 @@
-package com.amit.activity_frament_datatransfer;
+package activity_to_activity;
 
 import android.content.Intent;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.amit.activity_frament_datatransfer.R;
 
 public class GetParcelDataa extends AppCompatActivity {
 
