@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.amit.activity_frament_datatransfer.R;
 
-public class GetParcelDataa extends AppCompatActivity {
+public class GetParcelData extends AppCompatActivity {
 
     TextView textView, textView2, textView3;
 

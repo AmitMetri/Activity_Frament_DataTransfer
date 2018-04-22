@@ -18,7 +18,8 @@
         </activity>
         <activity android:name="activity_to_activity.GetIntentData" />
         <activity android:name="activity_to_activity.GetBundleData" />
-        <activity android:name="activity_to_activity.GetParcelDataa"></activity>
+        <activity android:name="activity_to_activity.GetParcelData" />
+        <activity android:name="activity_to_fragment.FragmentContainerActivity"></activity>
     </application>
 
 </manifest>

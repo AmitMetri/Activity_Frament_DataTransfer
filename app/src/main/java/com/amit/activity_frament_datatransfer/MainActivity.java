@@ -9,13 +9,14 @@ import android.widget.EditText;
 
 import activity_to_activity.GetBundleData;
 import activity_to_activity.GetIntentData;
-import activity_to_activity.GetParcelDataa;
+import activity_to_activity.GetParcelData;
 import activity_to_activity.Person;
+import activity_to_fragment.FragmentContainerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     public EditText editText, editText2, editText3;
-    Button button, button2, button3;
+    Button button, button2, button3, button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         button =  (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
+        button4 = (Button) findViewById(R.id.button4);
 
         /*REFERENCE LINK
     https://www.survivingwithandroid.com/2012/09/passing-data-between-activities-2.html
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, GetParcelDataa.class);
+                Intent i = new Intent(MainActivity.this, GetParcelData.class);
                 Person p = new Person();
                 p.setName(editText.getText().toString());
                 p.setSurname(editText2.getText().toString());
@@ -70,8 +72,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
+        //Pass data to Fragment in Bundle
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this, FragmentContainerActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
