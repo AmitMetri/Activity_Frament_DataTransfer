@@ -19,7 +19,9 @@
         <activity android:name="activity_to_activity.GetIntentData" />
         <activity android:name="activity_to_activity.GetBundleData" />
         <activity android:name="activity_to_activity.GetParcelData" />
-        <activity android:name="activity_to_fragment.FragmentContainerActivity"></activity>
+        <activity android:name="activity_to_fragment.FragmentActivityA" />
+        <activity android:name="fragment_to_activity.FragmentActivityB" />
+        <activity android:name="fragment_to_fragment.Main2Activity"></activity>
     </application>
 
 </manifest>

@@ -11,12 +11,14 @@ import activity_to_activity.GetBundleData;
 import activity_to_activity.GetIntentData;
 import activity_to_activity.GetParcelData;
 import activity_to_activity.Person;
-import activity_to_fragment.FragmentContainerActivity;
+import activity_to_fragment.FragmentActivityA;
+import fragment_to_activity.FragmentActivityB;
+import fragment_to_fragment.Main2Activity;
 
 public class MainActivity extends AppCompatActivity {
 
     public EditText editText, editText2, editText3;
-    Button button, button2, button3, button4;
+    Button button, button2, button3, button4, button5, button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.button4);
+        button5 = (Button) findViewById(R.id.button5);
+        button6 = (Button) findViewById(R.id.button6);
 
         /*REFERENCE LINK
     https://www.survivingwithandroid.com/2012/09/passing-data-between-activities-2.html
@@ -76,9 +80,33 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this, FragmentContainerActivity.class);
+                Intent intent= new Intent(MainActivity.this, FragmentActivityA.class);
+                intent.putExtra("MAIN", "Fram MainActivity");
                 startActivity(intent);
             }
         });
+
+        //Navigate to Fragment B
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this, FragmentActivityB.class);
+                startActivity(intent);
+            }
+        });
+
+        //get data from Fragment B
+        editText.setText(getIntent().getStringExtra("FragmentB"));
+
+
+        //Fragment to Fragment data transfer Demo
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
